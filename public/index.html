@@ -2,47 +2,70 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Foundation Template | Workspace</title>
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/css/foundation.min.css"/>
-<div class="row">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/css/foundation.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
+<header class="row">
 	<div class="large-12 columns">
 		<nav class="top-bar" data-topbar>
-			<ul class="title-area">
-				<li class="name">
-					<h1><a href="#">Top Bar Title</a></h1>
-				<li class="toggle-topbar menu-icon">
-					<a href="#"><span>menu</span></a>
-			</ul>
-			<section class="top-bar-section">
-				<ul class="left">
-					<li><a href="#">Link 1</a>
-					<li><a href="#">Link 2</a>
+			<div class="top-bar-section">
+				<ul class="title-area">
+					<li class="name">
+						<b><a href="/">Desarrollo Web México</a></b>
 				</ul>
 				<ul class="right">
-					<li class="search">
+					<li><a href="#"><span class="fi-mail medium"> <span class="hide-for-small-only">Contacto</span></span></a>
+					<li class"search">
 						<form>
-							<input type="search">
+							<input type="search" placeholder="buscar">
 						</form>
 					<li class="has-button">
-						<a class="small button" href="#">Search</a>
+							<button class="fi-magnifying-glass"></button>
 				</ul>
-			</section>
+			</div>
 		</nav> 
 	</div>
-</div>
-<div class="row">
+</header>
+<main class="row">
 	<div class="large-12 columns">
-		<div class="hide-for-small">
-			<div id="featured"><img alt="slide image" src="http://placehold.it/1000x400&amp;text=Slide%20Image"></div>
-		</div> 
 		<div class="row">
-			<div class="small-12 show-for-small">
-				<br>
-				<img src="http://placehold.it/1000x600&amp;text=For%20Small%20Screens">
+ 			<div class="large-9 medium-6 small-12 columns">
+				<div class="panel radius">
+					<h1>Desarollo Web México</h1>
+					<hr>
+					<p>El equipo de investigación y desarrollo web más inovador de México</h5>
+					<p>Somos un equipo de expertos desarrolladores, diseñadores, estadistas,
+						investigadores y emprendedores que nos enfocamos en brindar a las <b>PYMES</b>
+						servicios a sus necesidades
+				</div>
 			</div>
+			<form class="large-3 medium-6 small-12 columns">
+				<h2>Contactanos</h2>
+				<p>aquí va una dirección
+				<p><a href="mailto:#">correo</a> telefono
+				<label>
+					<input type="text" name="nombre" placeholder="Nombre" required>
+				</label>
+				<label>
+					<input type="email" name="email" placeholder="Correo Electronico" required>
+				</label>
+				<label>
+					<input type="text" name="telefono" placeholder="Telefono">
+				</label>
+				<label>
+					<select>
+						<option>Asunto
+						<option>Cotización
+						<option>Busco Trabajo
+					</select>
+				</label>
+				<label>
+					<textarea>¿Cuál es su necesidad?</textarea>
+				</label>
+				<input type="button" value="Enviar">
+			</form>
 		</div>
 	</div>
-</div>
-<br>
+</main> 
 <div class="row">
 	<div class="large-12 columns">
 		<div class="row">
@@ -125,11 +148,12 @@ erat, eleifend sed pulvinar ac. Suspendisse ultrices ornare tempor. Aenean eget 
 		</div>
 	</div>
 </footer>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/jquery.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation.abide.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation.interchange.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation.reveal.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation.topbar.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation/foundation.abide.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation/foundation.interchange.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation/foundation.reveal.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation/foundation.topbar.min.js"></script>
 <script>
 $(document).foundation();
 </script>
