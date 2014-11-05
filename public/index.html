@@ -31,6 +31,12 @@
 a {
 	color:#89D7ED;
 }
+main {
+	margin:1rem 0;
+}
+.show-focus-only {
+	display:none;
+}
 </style>
 <header class="row">
 	<div class="large-12 columns">
@@ -55,8 +61,8 @@ a {
 </header>
 <main class="row">
 	<div class="large-12 columns">
-		<div class="row">
- 			<div class="large-9 medium-6 small-12 columns">
+		<div class="row" data-equalizer>
+ 			<div class="large-9 medium-6 small-12 columns" data-equalizer-watch>
 				<div class="panel radius full-height">
 					<h1>Desarollo Web México</h1>
 					<hr>
@@ -66,30 +72,20 @@ a {
 						servicios a sus necesidades
 				</div>
 			</div>
-			<form class="large-3 medium-6 small-12 columns">
+			<form class="large-3 medium-6 small-12 columns" data-equalizer-watch>
 				<h2>Contactanos</h2>
 				<p>aquí va una dirección
-				<p><a href="mailto:#">correo</a> telefono
-				<label>
-					<input type="text" name="nombre" placeholder="Nombre" required>
-				</label>
-				<label>
-					<input type="email" name="email" placeholder="Correo Electronico" required>
-				</label>
-				<label>
-					<input type="text" name="telefono" placeholder="Telefono">
-				</label>
-				<label>
-					<select>
+				<p><a href="mailto:#">correo</a> telefono</p>
+					<input type="text" name="nombre" placeholder="Nombre" class="radius" required>
+					<input type="email" name="email" placeholder="Correo Electronico" class="radius" required>
+					<input type="text" name="telefono" placeholder="Telefono" class="radius">
+					<select class="radius show-focus-only">
 						<option>Asunto
 						<option>Cotización
 						<option>Busco Trabajo
 					</select>
-				</label>
-				<label>
-					<textarea>¿Cuál es su necesidad?</textarea>
-				</label>
-				<input type="button" value="Enviar">
+					<textarea class="radius show-focus-only">¿Cuál es su necesidad?</textarea>
+				<input type="button" value="Enviar" class="button radius expand small show-focus-only">
 			</form>
 		</div>
 	</div>
