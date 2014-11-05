@@ -47,7 +47,12 @@ main {
 						<b><a href="/">Desarrollo Web México</a></b>
 				</ul>
 				<ul class="right">
-					<li><a href="#"><span class="fi-mail medium"> <span class="hide-for-small-only">Contacto</span></span></a>
+					<li>
+						<a href="#">
+							<span class="fi-mail medium">
+								<span class="hide-for-small-only">Contacto</span>
+							</span>
+						</a>
 					<li class"search">
 						<form>
 							<input type="search" placeholder="buscar">
@@ -59,57 +64,57 @@ main {
 		</nav> 
 	</div>
 </header>
-<main class="row">
-	<div class="large-12 columns">
-		<div class="row" data-equalizer>
- 			<div class="large-9 medium-6 small-12 columns" data-equalizer-watch>
-				<div class="panel radius full-height">
-					<h1>Desarollo Web México</h1>
-					<hr>
-					<p>El equipo de investigación y desarrollo web más inovador de México</h5>
-					<p>Somos un equipo de expertos desarrolladores, diseñadores, estadistas,
-						investigadores y emprendedores que nos enfocamos en brindar a las <b>PYMES</b>
-						servicios a sus necesidades
-				</div>
-			</div>
-			<form class="large-3 medium-6 small-12 columns" data-equalizer-watch>
-				<h2>Contactanos</h2>
-				<p>aquí va una dirección
-				<p><a href="mailto:#">correo</a> telefono</p>
-					<input type="text" name="nombre" placeholder="Nombre" class="radius" required>
-					<input type="email" name="email" placeholder="Correo Electronico" class="radius" required>
-					<input type="text" name="telefono" placeholder="Telefono" class="radius">
-					<select class="radius show-focus-only">
-						<option>Asunto
-						<option>Cotización
-						<option>Busco Trabajo
-					</select>
-					<textarea class="radius show-focus-only">¿Cuál es su necesidad?</textarea>
-				<input type="button" value="Enviar" class="button radius expand small show-focus-only">
-			</form>
+<main class="row" data-equalizer>
+	<div class="large-9 medium-6 small-12 columns">
+		<div class="panel radius" data-equalizer-watch>
+			<h1>Desarollo Web México</h1>
+			<hr>
+			<p>El equipo de investigación y desarrollo web más inovador de México</h5>
+			<p>Somos un equipo de expertos desarrolladores, diseñadores, estadistas,
+				investigadores y emprendedores que nos enfocamos en brindar a las
+				<b>PYMES</b> servicios a sus necesidades
 		</div>
 	</div>
+	<form class="large-3 medium-6 small-12 columns"
+		data-equalizer-watch id="contacto"
+	>
+		<h3>Contactanos</h3>
+		<p>aquí va una dirección
+		<p><a href="mailto:#">correo</a> telefono</p>
+		<input type="text" name="nombre"	placeholder="Nombre"
+			class="radius" required
+		>
+		<input type="email" name="email" placeholder="Correo Electronico"
+			class="radius" required
+		>
+		<input type="text" name="telefono" placeholder="Telefono" class="radius">
+		<select class="radius show-focus-only">
+			<option>Asunto
+			<option>Cotización
+			<option>Busco Trabajo
+		</select>
+		<textarea class="radius show-focus-only">¿Cuál es su necesidad?</textarea>
+		<input type="button" value="Enviar"
+			class="button radius expand small show-focus-only"
+		>
+	</form>
 </main> 
 <div class="row">
-	<div class="large-12 columns">
-		<div class="row">
-			<div class="large-3 small-6 columns">
+	<div class="small-12 columns">
+		<ul class="small-block-grid-2 medium-block-grid-4">
+			<li>
 				<img src="http://placehold.it/250x250&amp;text=Thumbnail">
 				<h6 class="panel">Description</h6>
-			</div>
-			<div class="large-3 small-6 columns">
+			<li>
 				<img src="http://placehold.it/250x250&amp;text=Thumbnail">
 				<h6 class="panel">Description</h6>
-			</div>
-			<div class="large-3 small-6 columns">
+			<li>
 				<img src="http://placehold.it/250x250&amp;text=Thumbnail">
 				<h6 class="panel">Description</h6>
-			</div>
-			<div class="large-3 small-6 columns">
+			<li>
 				<img src="http://placehold.it/250x250&amp;text=Thumbnail">
-				<h6 class="panel">Description</h6>
-			</div> 
-		</div>
+				<h6 class="panel">Description</h6> 
+		</ul>
 	</div>
 </div>
 <div class="row">
@@ -180,4 +185,10 @@ erat, eleifend sed pulvinar ac. Suspendisse ultrices ornare tempor. Aenean eget 
 <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation/foundation.topbar.min.js"></script>
 <script>
 $(document).foundation();
+$('#contacto input').focus(function (e) {
+	$('#contacto').height('auto');
+	$('.show-focus-only').show(350, function () {
+		$(window).resize();
+	});
+});
 </script>
